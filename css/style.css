@@ -1,0 +1,574 @@
+@font-face {
+	font-family: DM Sans;
+	src: url('../fonts/DMSans-Bold.ttf');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: DM Sans;
+	src: url('../fonts/DMSans-Medium.ttf');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: DM Sans;
+	src: url('../fonts/DMSans-Regular.ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: Rosario;
+	src: url('../fonts/Rosario-Bold.ttf');
+	font-weight: 700;
+}
+
+body {
+	font-family: DM Sans;
+	overflow-x: hidden;
+	color: #222;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button,
+input,
+select {
+	font-family: inherit;
+	outline: none;
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+nav {
+	margin-top: 50px;
+	padding: 16px 0;
+}
+
+nav .container,
+nav .container ul {
+	display: flex;
+	align-items: center;
+}
+
+nav .container {
+	justify-content: space-between;
+}
+
+nav .container ul.right {
+	gap: 40px;
+}
+
+nav .container ul.right a {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+nav .container ul.left .link_circle + .link_circle {
+	margin-left: 20px;
+}
+
+nav .container ul.left .register {
+	margin-left: 32px;
+}
+
+nav .container ul.left .link_circle a {
+	padding: 8px;
+	background-color: #f3fbf8;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.btn.btn-green {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+	border-radius: 8px;
+	background: #09a66d;
+}
+
+nav .container ul.left .btn.btn-green {
+	padding: 10px 23px;
+}
+
+header {
+	position: relative;
+}
+
+header:before {
+	content: '';
+	position: absolute;
+	background: url('../img/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145-removebg-preview\ 1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 612px;
+	height: 408px;
+	top: 75px;
+	z-index: -1;
+}
+
+header .header_content {
+	position: relative;
+	text-align: center;
+	background: #f3fbf8;
+	padding-top: 92.97px;
+	padding-bottom: 50px;
+	z-index: 1;
+}
+
+header .header_content .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header .header_content h1 {
+	font-family: Rosario;
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 90px;
+}
+
+header .header_content p.header_desc {
+	color: #555;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+header .header_content .to_order {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 40px;
+	gap: 20px;
+}
+
+header .header_content .to_order .order_now {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+header .header_content .to_order .btn {
+	border-radius: 100%;
+	padding: 32px 16px;
+	width: 64px;
+	height: 64px;
+	display: block;
+	display: flex;
+	align-items: center;
+}
+
+header .header_content .container {
+	position: relative;
+	z-index: 2;
+}
+
+header .header_content::before {
+	content: '';
+	position: absolute;
+	background: #f3fbf8 url('../img/vegetables-fruits-white_55883-892\ 1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+	background-size: cover;
+	width: 862.179px;
+	height: 465.521px;
+	left: 111.19px;
+	bottom: 32.88px;
+	z-index: -1;
+}
+
+header .header_content .stats {
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+header .header_content .stats .stat {
+	background: #fff;
+	padding: 17px 33px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+header .header_content .stats .stat .stat_icon {
+	width: 56px;
+	height: 56px;
+	background-color: #f3fbf8;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header .header_content .stats .stat .stat_content {
+	text-align: center;
+	color: #000;
+}
+
+header .header_content .stats .stat h3 {
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 48px;
+}
+
+header .header_content .stats .stat p {
+	margin-top: 4px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+main h2 {
+	color: #222;
+	font-family: Rosario;
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 90px;
+}
+
+.why_best {
+	padding-top: 140.89px;
+	background-image: url('../img/Vector\ 16.png');
+	background-repeat: no-repeat;
+	background-position: center calc(100% + -410px);
+}
+
+.why_best .why_bests {
+	display: flex;
+	gap: 59px;
+}
+
+.why_best .why_bests .why_bests_description {
+	color: #555;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	max-width: 637.013px;
+}
+
+.why_best .why_bests .cards {
+	margin-top: 57px;
+}
+
+.why_best .why_bests .cards .card {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	padding: 41px 59.27px;
+	width: 500px;
+}
+
+.why_best .why_bests .cards .card:nth-child(2n) {
+	background: #f3fbf8;
+}
+
+.why_best .why_bests .cards .card .card_icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+	background-color: #f3fbf8;
+	border-radius: 100%;
+}
+
+.why_best .why_bests .cards .card .card_content {
+	flex: 1 1 0;
+}
+
+.why_best .why_bests .cards .card:nth-child(2n) .card_icon {
+	background-color: #fff;
+}
+
+.why_best .why_bests .cards .card .card_content h3 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.why_best .why_bests .cards .card .card_content p {
+	color: #555;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-top: 8px;
+}
+
+.why_best .pluses {
+	display: flex;
+	flex-direction: column;
+}
+
+.why_best .arrow_down {
+	margin: 0 auto;
+}
+
+.why_best aside {
+	position: relative;
+}
+
+.why_best aside img {
+	margin-top: 110px;
+	padding-left: 117.06px;
+}
+
+.why_best aside::before {
+	content: '';
+	position: absolute;
+	background-image: url('../img/load.png');
+	background-repeat: no-repeat;
+	width: 600px;
+	height: 600px;
+	right: -300px;
+	top: 50px;
+}
+
+.explor_special {
+	background: rgba(9, 166, 109, 0.05);
+	padding: 88.76px 0 143.24px;
+	margin-top: 146.11px;
+	position: relative;
+}
+
+.explor_special .container {
+	display: flex;
+	position: relative;
+	gap: 50px;
+}
+
+.explor_special .explor_content h2 {
+	margin-top: 30.52px;
+}
+
+.explor_special .explor_content p {
+	color: #555;
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.explor_special .explor_content .to_explor {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+	gap: 20px;
+}
+
+.explor_special .explor_content .to_explor .explor_now {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.explor_special .explor_content .to_explor .btn-circle {
+	width: 64px;
+	height: 64px;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	padding: 32px 16px;
+}
+
+.explor_special::before {
+	content: '';
+	position: absolute;
+	background-image: url('../img/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145-removebg-preview\ 1.png');
+	background-repeat: no-repeat;
+	width: 413.767px;
+	height: 397.188px;
+	bottom: 0;
+	right: 50px;
+}
+
+.what_our_customers {
+	display: flex;
+	margin-top: 96px;
+	gap: 126.36px;
+}
+
+.what_our_customers h2 {
+	width: 642px;
+}
+
+.what_our_customers p {
+	color: #555;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	margin-top: 30px;
+}
+
+.what_our_customers .review {
+	margin-top: 40px;
+	display: flex;
+	gap: 124.21px;
+}
+
+.what_our_customers .review .stars {
+	margin-top: 20px;
+	display: flex;
+}
+
+.what_our_customers .review .stars .star {
+	background-image: url('../img/star.svg');
+	width: 23.152px;
+	height: 23.152px;
+}
+
+.what_our_customers .review .stars .star.active {
+	background-image: url('../img/star_fill.svg');
+}
+
+.what_our_customers .review .user_name {
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 36px;
+}
+
+.what_our_customers .review .review_paginate {
+	display: flex;
+	margin-left: 124.21px;
+	gap: 26.4px;
+}
+
+.what_our_customers .review .review_paginate .btn {
+	margin-top: auto;
+	width: 56px;
+	height: 56px;
+	border-radius: 100%;
+}
+
+.btn-white {
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+.download {
+	display: flex;
+	gap: 112.79px;
+	margin-top: 188.82px;
+}
+
+.download .download_preview {
+	padding-right: 84px;
+}
+
+.download .download_content {
+	padding-top: 28.03px;
+}
+
+.download .download_content .download_badge {
+	border-radius: 50px;
+	background: #f3fbf8;
+	padding: 11px 24px;
+	width: 170px;
+}
+
+.download .download_content h2 {
+	margin-top: 16px;
+	max-width: 662.63px;
+}
+
+.download .download_content p {
+	color: #555;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	max-width: 574.185px;
+	margin-top: 20px;
+}
+
+.download .download_content .btns {
+	margin-top: 50.04px;
+	display: flex;
+	gap: 24px;
+}
+
+footer {
+	margin-top: 139.94px;
+	padding: 66.79px 0 118.28px;
+	display: flex;
+}
+
+footer .footer_title {
+	margin-right: 157.01px;
+}
+
+footer .footer_title p {
+	color: #555;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	width: 345.356px;
+	margin-top: 29.93px;
+}
+
+footer .footer_navigate h2 {
+	padding-top: 39px;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+footer .footer_navigate ul {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 24.69px;
+}
+
+footer .footer_navigate ul a {
+	color: #555;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+footer .footer_navigate:not(:last-child) {
+	margin-right: 142.87px;
+}
+
+footer .footer_navigate .email {
+	margin-top: 40px;
+	color: #222;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+footer .social_links {
+	display: flex;
+	gap: 50px;
+	margin-top: 50px;
+}
+
+footer .social_links a {
+	display: block;
+	width: 24px;
+	height: 24px;
+}
